@@ -43,7 +43,7 @@ public class ControlCalculadora {
 		return new Respuesta(a, b, a / b);
 	}
 	
-	@GetMapping("/getdb")
+	@GetMapping("/")
 	public String getInfo() {
 		return user + "," + server;
 	}
