@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: micro-calc-config
+  namespace: microservices
+  labels:
+    app: micro-calc
+data:
+  APP_MESSAGE_ERROR: "no se puede dividir por cero, da infinito"
+  SERVER_PORT: "8080"
+  DB_SERVER: "localhost"
+  DB_USER: "admin"
